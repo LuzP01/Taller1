@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <p>CAJA DE COMENTARIOS</p>
+
+        <div class="etiqueta">
+            <h4>Nombre</h4>
+            <textarea name="comment" form="usrform" minlength="3">
+             </textarea>
+             
+        </div>
+
+        <div class="etiqueta">
+            <h4>Fecha</h4>
+            <input type="date" id="start" name="trip-start" value="2020-07-22" min="2020-01-01" max="2021-12-31">
+        </div>
+
+
+        <div class="etiqueta">
+            <h4>Escríbenos tu comentario</h4>
+            <textarea rows="10" maxlength="200" id="mensaje" name="comment" form="usrform">
+            </textarea>
+            <div id="contador">0/200</div>
+
+            <form>
+                <input type="submit" value="Agregar" />
+            </form>
+        </div>
+    </div>
+
+    <script src="codigo.js"></script>
+</body>
+
+</html>
